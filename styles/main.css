@@ -2,3 +2,13 @@
     margin: 0;
     box-sizing: border-box;
 }
+/* Navbar styles */
+header{
+    height: 5rem;
+    background-color: #4CAF50;
+    color: #fff;
+}
+nav{
+    border: 1px solid red;
+    color: #;
+}

@@ -106,3 +106,14 @@ Não é necessário servidor local.
 
 Basta abrir o ficheiro:
 num navegador (Chrome, Firefox, Edge, etc.).
+
+## 🔎 Considerações e Decisões de Implementação
+
+Devido a aspetos omissos no enunciado, foram adotadas as seguintes decisões:
+
+- A autenticação é **simulada** — assume-se que o utilizador já está autenticado ao entrar numa área.  
+- As respostas do servidor são tratadas de forma genérica e exibidas ao utilizador sem linguagem técnica.  
+- O layout foi desenhado para aproveitar ao máximo a área de conteúdo principal.  
+- Inserções podem não aparecer nos endpoints, conforme indicado pelo enunciado.
+
+---

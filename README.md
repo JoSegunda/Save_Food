@@ -17,3 +17,11 @@ Criar uma plataforma onde:
 - Tudo é executado **apenas no client-side**, consumindo endpoints remotos fornecidos pelo enunciado.
 
 ---
+
+## 🧩 Funcionalidades Implementadas
+
+### 👨‍🍳 Restaurante
+- Listagem de restaurantes.  
+- Pesquisa por nome ou morada.  
+- Inserção de ofertas (nome, descrição, foto e número de unidades).  
+- Visualização das ofertas ativas.

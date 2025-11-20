@@ -117,3 +117,9 @@ Devido a aspetos omissos no enunciado, foram adotadas as seguintes decisões:
 - Inserções podem não aparecer nos endpoints, conforme indicado pelo enunciado.
 
 ---
+
+## 👥 Autores
+
+- **Joaquim Segunda**  
+
+Disciplina: **Tecnologias Web — 2025/2026**

@@ -49,3 +49,24 @@ ul{
 }
 
 /* Main part style */
+
+#landing-img{
+    height: 90vh;
+
+    background-image: url('../media/main.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat
+}
+#introduction{
+    position: relative;
+    color: #F5F6FA;
+    bottom: 50rem;
+    padding: 16px;
+}
+#introduction > h1{
+    font-size: 5rem;
+}
+#introduction > p{
+    col
+}

@@ -4,12 +4,13 @@
 }
 /* Navbar styles */
 header{
-    height: 8rem;
     background-color: #4CAF50;
     color: #fff;
 }
 nav{
     border: 1px solid red;
+    margin-right: 12px;
+    margin-left: 12px;
     display: flex;
 }
 #logo{

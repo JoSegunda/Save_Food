@@ -12,6 +12,9 @@ nav{
     margin-right: 12px;
     margin-left: 12px;
     display: flex;
+    justify-content: space-between;
+    justify-items: baseline;
+    align-items: center;
 }
 #logo{
     background-image: url('../media/logonobg.png');
@@ -20,4 +23,12 @@ nav{
     background-size: cover;
     height: 6rem;
     width: 6rem;
+}
+ul{
+    display: flex;
+    margin: 12px;
+}
+#navigation > li{
+    padding: 12px;
+    list-style: none;
 }

@@ -85,3 +85,6 @@ A aplicação possui:
 - Link para: https://www.uevora.pt/
 
 ---
+
+## 📂 Estrutura do Repositório
+//TODO

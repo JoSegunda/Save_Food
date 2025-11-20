@@ -123,3 +123,7 @@ Devido a aspetos omissos no enunciado, foram adotadas as seguintes decisões:
 - **Joaquim Segunda**  
 
 Disciplina: **Tecnologias Web — 2025/2026**
+
+## 📝 Licença
+
+Projeto desenvolvido exclusivamente para fins académicos no âmbito da Universidade de Évora.

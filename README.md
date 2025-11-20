@@ -74,3 +74,14 @@ A aplicação possui:
   - Restaurante  
   - Cliente  
   - Administração 
+
+### 📄 Conteúdo Principal
+- Área dinâmica que exibe cada secção conforme a navegação.  
+- Layout responsivo e adaptado a vários tamanhos de ecrã.  
+
+### 📞 Rodapé (Footer)
+- Contactos  
+- Créditos dos autores  
+- Link para: https://www.uevora.pt/
+
+---

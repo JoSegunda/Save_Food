@@ -54,6 +54,7 @@ ul{
     height: 90vh;
 
     background-image: url('../media/main.png');
+    filter: brightness(0.3);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat
@@ -63,10 +64,23 @@ ul{
     color: #F5F6FA;
     bottom: 50rem;
     padding: 16px;
+    text-align: center;
+    word-wrap: break-word;
 }
 #introduction > h1{
     font-size: 5rem;
 }
-#introduction > p{
-    col
+#introduction > h3{
+    font-size: 2rem;
+}
+#introplus > p{
+    font-size: 1rem;
+}
+#start-now{
+    width: 10%;
+    outline: 0;
+    border: 0;
+    margin-top: 15px;
+    border-radius: 16px;
+    padding: 10px;
 }

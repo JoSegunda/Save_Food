@@ -25,3 +25,18 @@ Criar uma plataforma onde:
 - Pesquisa por nome ou morada.  
 - Inserção de ofertas (nome, descrição, foto e número de unidades).  
 - Visualização das ofertas ativas.
+
+### 🧑‍💻 Cliente
+- Listagem de todas as ofertas disponíveis no dia.  
+- Pesquisa de ofertas por nome ou restaurante.  
+- Reserva de refeições com exibição de mensagens de sucesso ou erro.
+
+### 🛠️ Administração
+- Listagem de:
+  - Todos os restaurantes  
+  - Todos os clientes  
+  - Todas as ofertas  
+- Filtros locais para nomes e moradas.  
+- Acesso a detalhes exclusivos não visíveis ao público geral.
+
+---

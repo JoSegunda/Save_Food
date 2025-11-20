@@ -51,7 +51,7 @@ ul{
 /* Main part style */
 
 #landing-img{
-    height: 90vh;
+    height: 100vh;
 
     background-image: url('../media/main.png');
     filter: brightness(0.3);
@@ -60,6 +60,10 @@ ul{
     background-repeat: no-repeat
 }
 #introduction{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
     color: #F5F6FA;
     bottom: 50rem;
@@ -92,4 +96,9 @@ ul{
 #start-now:hover{
     border: 1px solid #4CAF50;
     background-color: transparent;
+}
+#introduction #logo{
+    width: 13rem;
+    height: 12rem;
+    
 }

@@ -40,3 +40,25 @@ Criar uma plataforma onde:
 - Acesso a detalhes exclusivos não visíveis ao público geral.
 
 ---
+
+## 🌐 Comunicação com o Servidor
+
+A aplicação comunica com os seguintes endpoints obrigatórios:
+
+- `restaurante/list`  
+- `restaurante/search`  
+- `restaurante/get`  
+- `cliente/list`  
+- `oferta/list`  
+- `oferta/search`  
+- `oferta/insert`  
+- `oferta/get`  
+- `oferta/reserve`  
+- `admin/restaurante/list`  
+- `admin/cliente/list`  
+- `admin/oferta/list`
+
+> ⚠️ Nota: o servidor é apenas uma maquete. Inserções podem não aparecer imediatamente.  
+> A aplicação trata erros e mensagens fornecidas pelo servidor, exibindo feedback claro ao utilizador.
+
+---

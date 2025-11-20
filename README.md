@@ -88,3 +88,21 @@ A aplicação possui:
 
 ## 📂 Estrutura do Repositório
 //TODO
+
+## 🛠️ Tecnologias Utilizadas
+
+- **HTML5**
+- **CSS3** (responsividade, grid/flex layout)
+- **JavaScript (ES6+):**
+  - Fetch API  
+  - DOM Manipulation  
+  - Organização modular  
+
+---
+
+## 🚀 Como Executar
+
+Não é necessário servidor local.
+
+Basta abrir o ficheiro:
+num navegador (Chrome, Firefox, Edge, etc.).

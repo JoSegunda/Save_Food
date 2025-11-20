@@ -62,3 +62,15 @@ A aplicação comunica com os seguintes endpoints obrigatórios:
 > A aplicação trata erros e mensagens fornecidas pelo servidor, exibindo feedback claro ao utilizador.
 
 ---
+
+## 🖥️ Estrutura da Interface
+
+A aplicação possui:
+
+### 🧭 Topo (Header)
+- Título do site  
+- Opções de navegação entre:
+  - Área Pública  
+  - Restaurante  
+  - Cliente  
+  - Administração 

@@ -81,6 +81,15 @@ ul{
     outline: 0;
     border: 0;
     margin-top: 15px;
-    border-radius: 16px;
+    border-radius: 12px;
     padding: 10px;
+    font-weight: bold;
+    background-color: #4CAF50;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+}
+#start-now:hover{
+    border: 1px solid #4CAF50;
+    background-color: transparent;
 }

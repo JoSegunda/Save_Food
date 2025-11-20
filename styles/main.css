@@ -4,7 +4,7 @@
 }
 /* Navbar styles */
 header{
-    height: 5rem;
+    height: 8rem;
     background-color: #4CAF50;
     color: #fff;
 }
@@ -13,5 +13,10 @@ nav{
     display: flex;
 }
 #logo{
-    background-image: ;
+    background-image: url('../media/logonobg.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 6rem;
+    width: 6rem;
 }

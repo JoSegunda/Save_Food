@@ -116,9 +116,16 @@ ul{
     text-align: center;
 
 }
-.info-card{
+.cards{
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid red;
+    margin: 16px;
+    padding: 5px;
+}
+.icon{
+    width:7rem;
 }
 
 /* Style for client section */

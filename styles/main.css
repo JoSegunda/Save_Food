@@ -49,10 +49,13 @@ ul{
 }
 
 /* Main part style */
+#landing{
+    height: 1015px;
+}
 
 #landing-img{
     height: 100vh;
-
+ 
     background-image: url('../media/main.png');
     filter: brightness(0.3);
     background-position: center;
@@ -60,7 +63,7 @@ ul{
     background-repeat: no-repeat
 }
 #introduction{
-    display: flex;
+    display: flex; 
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -108,5 +111,5 @@ ul{
     margin: 16px;
     background-color: #F5F6FA;
     border-radius: 12px;
-    
+
 }

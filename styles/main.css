@@ -81,7 +81,7 @@ ul{
     font-size: 1rem;
 }
 #start-now{
-    width: 10%;
+    width: 9rem;
     outline: 0;
     border: 0;
     margin-top: 15px;
@@ -102,3 +102,5 @@ ul{
     height: 12rem;
     
 }
+
+/* Restaurant section */

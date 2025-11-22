@@ -118,6 +118,7 @@ ul{
 }
 .info-card{
     display: flex;
+    flex-direction: row;
 }
 
 /* Style for client section */

@@ -122,14 +122,19 @@ ul{
     flex-wrap: wrap;
     justify-content: center;
     align-items: baseline;
+    align-content: stretch;
     border: 1px solid red;
     margin: 16px;
     gap: 6rem;
     padding: 5px;
 }
 .info-card{
-    width: 20rem;
+    width: 18rem;
     background-color: #4CAF50;
+    border-radius: 12px;
+}
+.info-card > p{
+    padding: 6px;
 }
 .icon{
     width:7rem;

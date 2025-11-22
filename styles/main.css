@@ -105,5 +105,8 @@ ul{
 
 /* Restaurant section */
 #restaurants{
+    margin: 16px;
+    background-color: #F5F6FA;
+    border-radius: 12px;
     
 }

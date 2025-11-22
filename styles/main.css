@@ -146,3 +146,7 @@ ul{
 
 
 /* Footer section */
+footer{
+    background-color: #4CAF50;
+    height: 200px;
+}

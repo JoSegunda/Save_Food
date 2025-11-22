@@ -120,9 +120,15 @@ ul{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: baseline;
     border: 1px solid red;
     margin: 16px;
+    gap: 6rem;
     padding: 5px;
+}
+.info-card{
+    width: 20rem;
 }
 .icon{
     width:7rem;

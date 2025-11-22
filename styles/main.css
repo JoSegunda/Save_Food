@@ -121,8 +121,7 @@ ul{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: baseline;
-    align-content: stretch;
+    align-items: stretch;
     border: 1px solid red;
     margin: 16px;
     gap: 6rem;

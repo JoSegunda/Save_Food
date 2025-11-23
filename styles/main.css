@@ -99,7 +99,7 @@ ul{
     transition: .5s;
 }
 #start-now:hover{
-    
+    opacity: .7;
 }
 #introduction #logo{
     width: 13rem;

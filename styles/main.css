@@ -118,6 +118,7 @@ ul{
 
 }
 .cards{
+    color: #fff;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;

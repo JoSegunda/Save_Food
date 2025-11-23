@@ -86,6 +86,7 @@ ul{
 #start-now{
     margin: 12px auto;
     width: 9rem;
+    height: 3rem;
     outline: 0;
     border: 0;
     margin-top: 15px;
@@ -98,8 +99,7 @@ ul{
     transition: .5s;
 }
 #start-now:hover{
-    border: 1px solid #4CAF50;
-    background-color: transparent;
+    
 }
 #introduction #logo{
     width: 13rem;

@@ -1,9 +1,19 @@
 #offers{
-    height: 100vh;
-    border: 2px solid #E1E1E1;
+    background-color: #fff;
+    box-shadow: 1px 1px 1px #E1E1E1;
+    width: 70%;
     margin: 5rem;
     padding: 5rem;
     border-radius: 12px;
+    margin: 4rem auto;
+}
+section{
+    display: flex;
+    flex-direction: column;
+}
+#offer-apoio{
+    margin: auto;
+    padding: 16px;
 }
 #ofertas
 {

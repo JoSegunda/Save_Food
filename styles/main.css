@@ -62,6 +62,11 @@ ul{
     background-size: cover;
     background-repeat: no-repeat
 }
+a{
+    list-style: none;
+    text-decoration: none;
+    color: inherit;
+}
 #introduction{
     display: flex; 
     flex-direction: column;

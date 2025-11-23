@@ -129,7 +129,8 @@ ul{
     padding: 5px;
 }
 .info-card{
-    width: 18rem;
+    width: 20rem;
+    height: 15rem;
     background-color: #4CAF50;
     border-radius: 12px;
 }

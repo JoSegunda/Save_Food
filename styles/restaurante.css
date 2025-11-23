@@ -43,3 +43,11 @@ input, textarea{
     flex-direction: row;
     border: 1px solid #000000;
 }
+.oferta-card-img{
+    background-image: url('../media/fried-rice.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 5rem;
+    height: 5rem;
+}

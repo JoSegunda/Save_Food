@@ -30,18 +30,18 @@
             <h1>Criar novas ofertas</h1>
             <form action="">
                 <label for="refeição">Nome da refeição:</label>
-                <input type="text" placeholder="Nome da refeição" name="meal_name" id="meal_name">
+                <input type="text" placeholder="Nome da refeição" name="meal_name" id="meal_name" required>
 
                 <label for="desc">Descrição:</label>
-                <textarea name="description" id="description" cols="80" rows="10" placeholder="Aqui contém a descrição da refeição"></textarea>
+                <textarea name="description" id="description" cols="80" rows="10" placeholder="Aqui contém a descrição da refeição" required></textarea>
 
-                <label for="refeição-img">Imagem da refeição: </label>
+                <label for="refeição-img" required>Imagem da refeição: </label>
                 <input type="file" name="image" id="file">
 
                 <label for="doses">Quantidades / Doses:</label>
-                <input type="number" name="doses" id="doses"> <br>
+                <input type="number" name="doses" id="doses" required> <br>
 
-                <button id="start-now">Registar</button>
+                <button id="start-now" type="submit">Registar</button>
             </form>
             
         </div>
@@ -56,7 +56,7 @@
                     <h4>Nome da refeição</h4>
                     <p>Descrição:</p>
                     <p>Estado:</p>
-                    <p>Quantidade</p>
+                    <p>Quantidade:</p>
                 </div>
             </div>
         </div>

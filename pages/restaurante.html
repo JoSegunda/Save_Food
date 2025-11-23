@@ -29,7 +29,17 @@
         <div id="ofertas">
             <h1>Criar novas ofertas</h1>
             <form action="">
-                <input type="text">
+                <label for="refeição">Nome da refeição:</label>
+                <input type="text" placeholder="Nome da refeição">
+
+                <label for="desc">Descrição:</label>
+                <textarea name="description" id="description" cols="30">Aqui contém a descrição da refeição</textarea>
+
+                <label for="refeição-img">Imagem da refeição: </label>
+                <input type="file" name="image" id="file">
+
+                <label for="doses">Quantidades / Doses:</label>
+                <input type="number" name="doses" id="doses">
             </form>
         </div>
         

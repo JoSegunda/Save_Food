@@ -21,8 +21,17 @@ section{
     flex-direction: column;
 }
 label{
+    margin-top: 1rem;
     display: block;
 }
-input[text]{
-    width: 90%;
+input, textarea{
+    outline: 0;
+}
+#meal_name{
+    width: 50%;
+    padding: 12px;
+    border: 0;
+    background-color: #f0ecec;
+    border-radius: 8px;
+    color: #000000;
 }

@@ -46,6 +46,7 @@ input, textarea{
     align-items: center;
     border: 1px solid #000000;
     border-radius: 12px;
+    width: fit-content;
 }
 .oferta-card-img{
     background-image: url('../media/fried-rice.png');
@@ -55,4 +56,8 @@ input, textarea{
     width: 5rem;
     height: 5rem;
     margin-right: 2rem;
+}
+.oferta-card-info{
+    padding: 12px;
+    border-left: 1px solid #000000;
 }

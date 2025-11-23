@@ -5,6 +5,7 @@
     box-sizing: border-box;
 }
 body{
+    background-color: #E6F4E8;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;

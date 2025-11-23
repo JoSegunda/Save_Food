@@ -1,7 +1,7 @@
-body{
-    background-color: #E6F4E8;
-}
-
 #offers{
     height: 100vh;
+    border: 2px solid #E1E1E1;
+    margin: 5rem;
+    padding: 5rem;
+    border-radius: 12px;
 }

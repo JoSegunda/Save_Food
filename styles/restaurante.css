@@ -3,7 +3,7 @@
     box-shadow: 1px 1px 1px #E1E1E1;
     width: 70%;
     margin: 5rem;
-    padding: 5rem;
+    padding: 2rem;
     border-radius: 12px;
     margin: 4rem auto;
 }
@@ -19,6 +19,8 @@ section{
 {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 label{
     margin-top: 1rem;
@@ -26,9 +28,10 @@ label{
 }
 input, textarea{
     outline: 0;
+    width: 60%;
 }
 #meal_name{
-    width: 50%;
+    
     padding: 12px;
     border: 0;
     background-color: #f0ecec;

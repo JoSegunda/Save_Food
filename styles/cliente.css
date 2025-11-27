@@ -15,3 +15,7 @@
 .no-show{
     display: none;
 }
+#show-content{
+    display: flex;
+    border: 1px solid red;
+}

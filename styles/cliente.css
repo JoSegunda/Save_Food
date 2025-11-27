@@ -1,6 +1,6 @@
 #client-area{
     margin: 4rem auto;
-    background-color: #fff;
+    background-color: #f4fff4;
     width: 70%;
     height: 40rem;
     padding: 2rem;
@@ -25,9 +25,14 @@ h1{
     border: 1px solid red;
 }
 #show-oferta{
-    
+    padding: 1rem;
+    text-align: center;
 }
 #search-offer{
     padding: 8px;
     width: 50rem;
+    border-radius: 12px;
+    background-color: #ffffff;
+    border: 1px solid #000;
+    outline: 0;
 }

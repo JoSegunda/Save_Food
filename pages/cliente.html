@@ -32,7 +32,10 @@
                 <h2>Listar Ofertas</h2>
                 <form action="">
                     <input type="text" name="oferta" id="search-offer">
-                    <option value="filter">FIlter</option>
+                    <select name="filter" id="filter">
+                        <option value="filter"></option>
+                    </select>
+                    
                     <button type="submit" id="search">Pesquisar</button>
                 </form>
                 <div id="listar-ofertas" class="no-show"></div>

@@ -23,7 +23,19 @@ section#admin{
     gap: 18px;
     width: 50%;
 }
-#
+#rest-info,
+#client-info,
+#offers-info{
+    transition: .8;
+    cursor: pointer;
+}
+
+#rest-info:hover,
+#client-info:hover,
+#offers-info:hover{
+    opacity: .8;
+}
+
 
 /* Style do show rest info
 

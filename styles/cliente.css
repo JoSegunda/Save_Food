@@ -47,4 +47,10 @@ h1{
     color: #ffffff;
     background-color: #4CAF50;
     font-weight: bold;
+    cursor: pointer;
+    transition: .4s;
+}
+
+#search:hover{
+    opacity: .9;
 }

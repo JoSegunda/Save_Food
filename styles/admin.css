@@ -26,16 +26,19 @@ section#admin{
 #rest-info,
 #client-info,
 #offers-info{
+    padding: 8px;
     transition: .8;
     cursor: pointer;
+    margin-bottom: .5em;
 }
 
-#rest-info:hover,
-#client-info:hover,
-#offers-info:hover{
-    opacity: .8;
+.active{
+    background-color: #4CAF50;
 }
 
+#rest-info:active{
+    background-color: #4CAF50;
+}
 
 /* Style do show rest info
 

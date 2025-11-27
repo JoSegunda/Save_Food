@@ -1,7 +1,10 @@
 // Change the setting currently changing
-$(document).ready(function () {
-  $("#client-info").click(function () {
-    
-    
-  });
-});
+
+
+function SetActive(element){
+    const currentChoice = document.getElementsByClassName("active")
+    currentChoice.classList("active","disabled")
+
+    const newChoice = document.getElementById(element)
+    newChoice.classList("disabled","active")
+}

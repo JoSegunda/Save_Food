@@ -12,3 +12,6 @@
     gap: 1rem;
     padding: 5px;
 }
+.no-show{
+    display: none;
+}

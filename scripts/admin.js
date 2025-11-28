@@ -9,4 +9,12 @@ function SetActive(element){
     const newChoice = document.getElementById(element)
     newChoice.classList.remove("disabled")
     newChoice.classList.add("active")
+
+    //Get class for us to show
+    var displayId = "show-"+element
+    const currentInfo = document.getElementById(displayId)
+    currentInfo.classList.remove("hide-info")
+    currentInfo.classList.add("show-info")
+
+    // 
 }

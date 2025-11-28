@@ -21,7 +21,9 @@ async function loadOffers(){
             offersContainer.innerHtml = "<p>Nenhuma Oferta Encontrada.</p>"
             return
         }
+        // Contéudo dentro do card de ofertas
+        let html = "<h1>Suas ofertas ativas</h1>"
     } catch (error) {
-        
+        offersContainer.innerHtml="<p>Erro ao carregar ofertas.</p>"
     }
 }

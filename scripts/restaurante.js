@@ -14,6 +14,14 @@ document.addEventListener("DOMContentLoaded", () =>{
         const mealName = document.querySelector("#meal_name").value.trim();
         const description = document.querySelector("#description").value.trim();
         const doses = document.querySelector("#doses").value;
+        const imageUrl = "https://via.placeholder.com/150";
+
+        const novaOferta = {
+            titulo: mealName,
+            descricao: description,
+            quantidade: parseInt(doses),
+            imagem: imageUrl;
+        }
     })
 })
 

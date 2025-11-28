@@ -1,4 +1,4 @@
-console.log("Working")
+
 
 document.addEventListener("DOMContentLoaded", () =>{
 
@@ -46,9 +46,9 @@ document.addEventListener("DOMContentLoaded", () =>{
             showFeedback("Erro","Erro de ligação ao servidor")
         }
     })
-})
-// Criar Caixa de Feedback
- function createFeedbackBox() {
+
+    // Criar Caixa de Feedback
+    function createFeedbackBox() {
         const box = document.createElement("div");
         box.id = "feedback-box";
         box.style.display = "none";
@@ -59,6 +59,13 @@ document.addEventListener("DOMContentLoaded", () =>{
         document.querySelector("#offers").prepend(box);
         return box;
     }
+    // Mostrar Feedback
+
+
+})
+
+
+
 // CARREGAR OFERTAS ATIVAS
 async function loadOffers(){
     offersContainer.innerHtml = "<h1>Suas ofertas ativas</h1> <p>A carregar ....</p>"

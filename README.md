@@ -92,7 +92,7 @@ A aplicação possui:
 ## 🛠️ Tecnologias Utilizadas
 
 - **HTML5**
-- **CSS3** (responsividade, grid/flex layout)
+- **CSS3** (responsividade, flex layout)
 - **JavaScript (ES6+):**
   - Fetch API  
   - DOM Manipulation  

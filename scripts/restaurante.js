@@ -7,6 +7,10 @@ document.addEventListener("DOMContentLoaded", () =>{
     const offersContainer = document.querySelector("#Ofertas disponíveis")
 
     loadOffers()
+
+    form.addEventListener("submit", async (e) => {
+        e.preventDefault() // Not to reload
+    })
 })
 
 // CARREGAR OFERTAS ATIVAS
@@ -34,7 +38,8 @@ async function loadOffers(){
                         <p><strong>ID:</strong> ${o.id}</p>
                     </div>
                 </div>`;
-        })
+        });
+        offersContainer.innerHtml = html
     } catch (error) {
         offersContainer.innerHtml="<p>Erro ao carregar ofertas.</p>"
     }

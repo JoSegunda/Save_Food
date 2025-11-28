@@ -16,5 +16,7 @@ function SetActive(element){
     currentInfo.classList.remove("hide-info")
     currentInfo.classList.add("show-info")
 
-    // 
+    // Hide the previous one
+    const lastInfo = document.getElementsByClassName("show-info")[0]
+    lastInfo.classList.remove("show-info")
 }

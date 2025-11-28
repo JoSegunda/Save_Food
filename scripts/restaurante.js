@@ -93,6 +93,15 @@ document.addEventListener("DOMContentLoaded", () => {
         offersContainer.innerHTML = "<p>Nenhuma Oferta Encontrada.</p>";
         return;
       }
+
+      // CORREÇÃO: Filtrar apenas as ofertas do restaurante_id = 1
+        const ofertasDoRestaurante = data.oferta_set.filter(oferta => oferta.restaurante_id == 1);
+        
+        if (ofertasDoRestaurante.length === 0) {
+            offersContainer.innerHTML = "<p>Nenhuma oferta ativa para o seu restaurante.</p>"
+            return
+        }
+
       // Contéudo dentro do card de ofertas
       let html = "<h1>Suas ofertas ativas</h1>";
       data.forEach((o) => {
@@ -105,11 +114,13 @@ document.addEventListener("DOMContentLoaded", () => {
                         <h4>${o.nome}</h4>
                         <p><strong>Descrição:</strong> ${o.descricao}</p>
                         <p><strong>Quantidade:</strong> ${o.unidades}</p>
-                        <p><strong>ID:</strong> ${o.restaurante_id}</p>
+                        <p><strong>ID:</strong> ${o.oferta_id}</p>
                     </div>
                 </div>`;
       });
+
       offersContainer.innerHTML = html;
+      
     } catch (error) {
         offersContainer.innerHTML = `<p>Erro ao carregar ofertas: ${error.message}</p>`
         console.error("Erro ao carregar ofertas:", error);

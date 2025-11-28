@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", () =>{
 
     const form = document.querySelector("#ofertas")
     const feedback = feedbackBox();
-    const offersContainer = document.querySelector("#Ofertas disponíveis")
+    const offersContainer = document.querySelector("#ofertas-disponiveis")
 
     loadOffers()
 
@@ -48,7 +48,7 @@ document.addEventListener("DOMContentLoaded", () =>{
     })
 
     // Criar Caixa de Feedback
-    function createFeedbackBox() {
+    function feedbackBox() {
         const box = document.createElement("div");
         box.id = "feedback-box";
         box.style.display = "none";

@@ -47,8 +47,18 @@ document.addEventListener("DOMContentLoaded", () =>{
         }
     })
 })
-
-
+// Criar Caixa de Feedback
+ function createFeedbackBox() {
+        const box = document.createElement("div");
+        box.id = "feedback-box";
+        box.style.display = "none";
+        box.style.padding = "15px";
+        box.style.marginTop = "20px";
+        box.style.borderRadius = "8px";
+        box.style.fontWeight = "600";
+        document.querySelector("#offers").prepend(box);
+        return box;
+    }
 // CARREGAR OFERTAS ATIVAS
 async function loadOffers(){
     offersContainer.innerHtml = "<h1>Suas ofertas ativas</h1> <p>A carregar ....</p>"

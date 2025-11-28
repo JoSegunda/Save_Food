@@ -17,13 +17,37 @@ document.addEventListener("DOMContentLoaded", () =>{
         const imageUrl = "https://via.placeholder.com/150";
 
         const novaOferta = {
-            titulo: mealName,
-            descricao: description,
-            quantidade: parseInt(doses),
-            imagem: imageUrl;
+            "titulo": mealName,
+            "descricao": description,
+            "quantidade": parseInt(doses),
+            "imagem": imageUrl
+        }
+
+        // Mandar para o servidor
+        try {
+            const response = await fetch("https://magno.di.uevora.pt/tweb/t1/oferta/insert",{
+                method: "POST",
+                headers: {"Content-Type":"application/json"},
+                body: JSON.stringify(novaOferta)
+            })
+
+            const data = await response.json()
+
+            if(data.erro){
+                showFeedback("Erro",+ data.erro)
+                return
+            }
+
+            showFeedback("sucesso","Oferta criada! Código: "+data.codigo)
+
+            form.reset();     // limpar inputs
+            loadOffers();     // atualizar lista
+        } catch (error) {
+            showFeedback("Erro","Erro de ligação ao servidor")
         }
     })
 })
+
 
 // CARREGAR OFERTAS ATIVAS
 async function loadOffers(){

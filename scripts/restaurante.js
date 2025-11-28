@@ -17,9 +17,9 @@ document.addEventListener("DOMContentLoaded", () =>{
         const imageUrl = "https://via.placeholder.com/150";
 
         const data = new URLSearchParams();
-        data.append("titulo", mealName);
+        data.append("nome", mealName);
         data.append("descricao", description);
-        data.append("imagem", imageUrl);
+        data.append("foto", imageUrl);
         data.append("unidades", doses);
         data.append("restaurante_id", 1);
 

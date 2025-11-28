@@ -16,12 +16,12 @@ document.addEventListener("DOMContentLoaded", () =>{
         const doses = document.querySelector("#doses").value;
         const imageUrl = "https://via.placeholder.com/150";
 
-        const novaOferta = {
-            "titulo": mealName,
-            "descricao": description,
-            "quantidade": parseInt(doses),
-            "imagem": imageUrl
-        }
+        const data = new URLSearchParams();
+        data.append("titulo", mealName);
+        data.append("descricao", description);
+        data.append("imagem", imageUrl);
+        data.append("unidades", doses);
+        data.append("restaurante_id", 1);
 
         // Mandar para o servidor
         try {

@@ -58,12 +58,23 @@ h1{
 #search:hover{
     opacity: .9;
 }
+#ofertas,
+#rest,
+#meals{
+    padding: 8px;
+    transition: .8;
+    cursor: pointer;
+    margin-bottom: .5em;
+}
 
 .active{
     background-color: #4CAF50;
     padding: 8px;
-    transition: .7s ease-in-out;
+    transition: all 0.3s ease-in;
 }
 .content-items{
     cursor: pointer;
+}
+.disabled{
+    opacity: .7;
 }

@@ -49,13 +49,12 @@ input, textarea{
     width: fit-content;
 }
 .oferta-card-img{
-    background-image: url('../media/fried-rice.png');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: cover;
-    width: 5rem;
-    height: 5rem;
-    margin-right: 2rem;
+    background-size: contain;
+    width: 50%;
+    height: 10rem;
+    padding: 0;
 }
 .oferta-card-info{
     padding: 12px;

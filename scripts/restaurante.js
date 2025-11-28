@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const mealName = document.querySelector("#meal_name").value.trim();
     const description = document.querySelector("#description").value.trim();
     const doses = document.querySelector("#doses").value;
-    const imageUrl = document.getElementById("image");
+    const imageUrl = document.querySelector("#image").value.trim();
 
     const data = new URLSearchParams();
     data.append("nome", mealName);
@@ -36,11 +36,9 @@ document.addEventListener("DOMContentLoaded", () => {
       const json = await response.json();
 
       if (json.status === "ok") {
-        showFeedback(
-          "sucesso",
-          "Oferta criada com sucesso! ID: " + json.oferta_id
-        );
-        form.reset();
+        showFeedback("sucesso", "Oferta criada com sucesso! ID: " + json.oferta_id)
+        // CORREÇÃO: Resetar o formulário corretamente
+        document.querySelector("#ofertas form").reset(); // ou e.target.reset() 
         loadOffers();
       } else {
         showFeedback("Erro", json.erro || "Erro desconhecido");
@@ -104,23 +102,23 @@ document.addEventListener("DOMContentLoaded", () => {
 
       // Contéudo dentro do card de ofertas
       let html = "<h1>Suas ofertas ativas</h1>";
-      data.forEach((o) => {
+      ofertasDoRestaurante.forEach((oferta) => {
         html += `
             <div class="oferta-card">
                     <div class="oferta-card-img" style="background-image: url('${
-                      o.foto || "https://via.placeholder.com/150"
+                      oferta.foto || "https://via.placeholder.com/150"
                     }')"></div>
                     <div class="oferta-card-info">
-                        <h4>${o.nome}</h4>
-                        <p><strong>Descrição:</strong> ${o.descricao}</p>
-                        <p><strong>Quantidade:</strong> ${o.unidades}</p>
-                        <p><strong>ID:</strong> ${o.oferta_id}</p>
+                        <h4>${oferta.nome}</h4>
+                        <p><strong>Descrição:</strong> ${oferta.descricao}</p>
+                        <p><strong>Quantidade:</strong> ${oferta.unidades}</p>
+                        <p><strong>ID:</strong> ${oferta.oferta_id}</p>
                     </div>
                 </div>`;
       });
 
       offersContainer.innerHTML = html;
-      
+
     } catch (error) {
         offersContainer.innerHTML = `<p>Erro ao carregar ofertas: ${error.message}</p>`
         console.error("Erro ao carregar ofertas:", error);

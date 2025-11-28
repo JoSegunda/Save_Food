@@ -23,6 +23,18 @@ async function loadOffers(){
         }
         // Contéudo dentro do card de ofertas
         let html = "<h1>Suas ofertas ativas</h1>"
+        ofertas.forEach(o =>{
+            html += `
+            <div class="oferta-card">
+                    <div class="oferta-card-img" style="background-image: url('${o.imagem || "https://via.placeholder.com/150"}')"></div>
+                    <div class="oferta-card-info">
+                        <h4>${o.titulo}</h4>
+                        <p><strong>Descrição:</strong> ${o.descricao}</p>
+                        <p><strong>Quantidade:</strong> ${o.quantidade}</p>
+                        <p><strong>ID:</strong> ${o.id}</p>
+                    </div>
+                </div>`;
+        })
     } catch (error) {
         offersContainer.innerHtml="<p>Erro ao carregar ofertas.</p>"
     }

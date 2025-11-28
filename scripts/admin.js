@@ -2,9 +2,11 @@
 
 
 function SetActive(element){
-    const currentChoice = document.getElementsByClassName("active")
-    currentChoice.classList("active","disabled")
+    const currentChoice = document.getElementsByClassName("active")[0]
+    currentChoice.classList.remove("active")
+    currentChoice.classList.add("disabled")
 
     const newChoice = document.getElementById(element)
-    newChoice.classList("disabled","active")
+    newChoice.classList.remove("disabled")
+    newChoice.classList.add("active")
 }

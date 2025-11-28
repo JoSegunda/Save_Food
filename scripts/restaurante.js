@@ -9,3 +9,6 @@ document.addEventListener("DOMContentLoaded", () =>{
     loadOffers()
 })
 
+function loadOffers(){
+    offersContainer.innerHtml = "<h1>Suas ofertas ativas</h1> <p>A carregar ....</p>"
+}

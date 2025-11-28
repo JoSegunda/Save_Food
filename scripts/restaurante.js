@@ -10,6 +10,10 @@ document.addEventListener("DOMContentLoaded", () =>{
 
     form.addEventListener("submit", async (e) => {
         e.preventDefault() // Not to reload
+
+        const mealName = document.querySelector("#meal_name").value.trim();
+        const description = document.querySelector("#description").value.trim();
+        const doses = document.querySelector("#doses").value;
     })
 })
 

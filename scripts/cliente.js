@@ -13,5 +13,5 @@ function setActive(id){
     newActiveItem.classList.remove("disabled")
     newActiveItem.classList.add("active")
 
-    
+    const newDisplay = document.getElementById("show"+id)
 }

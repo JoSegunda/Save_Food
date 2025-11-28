@@ -9,6 +9,7 @@
 #content{
     display: flex;
     justify-content: center;
+    align-items: baseline;
     border-bottom: 2px solid #4CAF50;
     gap: 1rem;
     padding: 5px;
@@ -58,3 +59,8 @@ h1{
     opacity: .9;
 }
 
+.active{
+    background-color: #4CAF50;
+    padding: 8px;
+    transition: .7s ease-in-out;
+}

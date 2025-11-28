@@ -10,13 +10,16 @@ function SetActive(element){
     newChoice.classList.remove("disabled")
     newChoice.classList.add("active")
 
+    // Hide the previous one
+    const lastInfo = document.getElementsByClassName("show-info")[0]
+    lastInfo.classList.remove("show-info")
+    lastInfo.classList.add("hide-info")
+
     //Get class for us to show
     var displayId = "show-"+element
     const currentInfo = document.getElementById(displayId)
     currentInfo.classList.remove("hide-info")
     currentInfo.classList.add("show-info")
 
-    // Hide the previous one
-    const lastInfo = document.getElementsByClassName("show-info")[0]
-    lastInfo.classList.remove("show-info")
+    
 }

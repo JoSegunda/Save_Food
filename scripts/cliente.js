@@ -72,6 +72,41 @@ function displayOffers(offers, container) {
     container.innerHTML = html;
     container.classList.remove("no-show");
 }
+
+// RESERVAR OFERTA
+async function reserveOffer(offerId) {
+    if (!confirm("Reservar esta oferta?")) {
+        return;
+    }
+    
+    const clienteId = 1; // ID simulado
+    
+    try {
+        const data = new URLSearchParams();
+        data.append("oferta_id", offerId);
+        data.append("cliente_id", clienteId);
+        
+        const response = await fetch("https://magno.di.uevora.pt/tweb/t1/oferta/reserve", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/x-www-form-urlencoded",
+            },
+            body: data.toString()
+        });
+        
+        const result = await response.json();
+        
+        if (result.status === "ok") {
+            alert("✅ Reserva efetuada com sucesso!");
+            loadOffers(); // Atualiza a lista
+        } else {
+            alert("❌ Erro: " + (result.erro || "Erro desconhecido"));
+        }
+    } catch (error) {
+        alert("❌ Erro de ligação ao servidor");
+    }
+}
+
 async function loadRestaurants() {
     const container = document.querySelector("#listar-restaurantes");
     if (!container) return;

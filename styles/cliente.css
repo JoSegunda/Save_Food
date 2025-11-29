@@ -116,3 +116,13 @@ h1{
     opacity: .9;
 }
 /* Cliente Cars */
+.restaurants-grid{
+    display: flex;
+    flex-wrap: wrap;
+}
+.restaurant-card{
+    display: flex;
+    width: 20%;
+    margin: 1rem;
+    
+}

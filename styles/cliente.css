@@ -124,16 +124,19 @@ h1{
     display: flex;
     width: 20%;
     border-radius: 12px;
-
-    box-shadow: 1px 1px 2px 1px #000;
+    cursor: pointer;
+    box-shadow: 1px 1px 2px 1px #2F3640;
     margin: 1rem;
     transition: all .3s ease-in;
 }
 .restaurant-card:hover{
     transform: translateY(-12px);
 
-    box-shadow: 1px 10px 0px 0px #000;
+    box-shadow: 1px 10px 0px 0px #2F3640;
 }
 .restaurant-info h3, strong{
     color: #4CAF50;
+}
+.restaurant-info p{
+    color: #2F3640;
 }

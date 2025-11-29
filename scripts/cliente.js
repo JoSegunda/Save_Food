@@ -19,3 +19,28 @@ function setActive(id){
     newDisplay.classList.remove("no-show")
     newDisplay.classList.add("show")
 }
+
+window.onload = () => {
+    loadOffers();
+    loadRestaurants();
+}
+
+async function loadOffers() {
+    const resp = await fetch("https://magno.di.uevora.pt/tweb/t1/oferta/list");
+    const data = await resp.json();
+
+    const container = document.getElementById("listar-ofertas");
+    container.innerHTML = "";
+
+    data.forEach(o => {
+        container.innerHTML += `
+            <div class="oferta-card">
+                <img src="${o.foto}" class="img-oferta">
+                <h3>${o.nome}</h3>
+                <p>${o.descricao}</p>
+                <p><strong>Unidades:</strong> ${o.unidades}</p>
+                <button onclick="reservar(${o.oferta_id})">Reservar</button>
+            </div>
+        `;
+    });
+}

@@ -121,7 +121,9 @@ h1{
     flex-wrap: wrap;
 }
 .restaurant-card{
+    background-color: rgb(240, 243, 245);
     display: flex;
+    flex-wrap: wrap;
     width: 20%;
     border-radius: 12px;
     cursor: pointer;
@@ -139,4 +141,8 @@ h1{
 }
 .restaurant-info p{
     color: #2F3640;
+}
+.restaurant-info{
+    text-align: left;
+    padding: 1rem;
 }

@@ -58,7 +58,7 @@ function displayOffers(offers, container) {
             <div class="offer-info">
                 <h4>${offer.nome || offer.titulo || 'Sem nome'}</h4>
                 <p><strong>Restaurante ID:</strong> ${offer.restaurante_id}</p>
-                <p><strong>Descrição:</strong> ${offer.descricao || 'Sem descrição'}</p>
+                <p class="description"><strong>Descrição:</strong> ${offer.descricao || 'Sem descrição'}</p>
                 <p><strong>Unidades disponíveis:</strong> ${offer.unidades}</p>
                 <p><strong>ID Oferta:</strong> ${offer.oferta_id}</p>
                 <button class="reserve-btn" onclick="reserveOffer(${offer.oferta_id})">

@@ -34,19 +34,6 @@ h1{
     text-align: center;
     width: 60%;
 }
-#search-offer, #search-rest{
-    padding: 8px;
-    width: 100%;
-    border-radius: 12px;
-    background-color: #ffffff;
-    border: 1px solid #000;
-    outline: 0;
-}
-
-
-#search:hover{
-    opacity: .9;
-}
 #oferta,
 #rest,
 #meals{

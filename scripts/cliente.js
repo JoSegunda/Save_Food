@@ -56,7 +56,7 @@ function displayOffers(offers, container) {
         <div class="offer-card">
             <div class="offer-image" style="background-image: url('${offer.foto || 'https://via.placeholder.com/150'}')"></div>
             <div class="offer-info">
-                <h3>${offer.nome || offer.titulo || 'Sem nome'}</h3>
+                <h4>${offer.nome || offer.titulo || 'Sem nome'}</h4>
                 <p><strong>Restaurante ID:</strong> ${offer.restaurante_id}</p>
                 <p><strong>Descrição:</strong> ${offer.descricao || 'Sem descrição'}</p>
                 <p><strong>Unidades disponíveis:</strong> ${offer.unidades}</p>

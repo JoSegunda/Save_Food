@@ -54,3 +54,9 @@ h1{
 .disabled{
     opacity: .7;
 }
+.offer-card{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid #000;
+    margin: .5em;
+}

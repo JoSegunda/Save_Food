@@ -26,21 +26,49 @@ window.onload = () => {
 }
 
 async function loadOffers() {
-    const resp = await fetch("https://magno.di.uevora.pt/tweb/t1/oferta/list");
-    const data = await resp.json();
+    const container = document.querySelector("#listar-ofertas");
+    if (!container) return;
+    
+    container.innerHTML = "<p>A carregar ofertas...</p>";
+    
+    try {
+        const response = await fetch("https://magno.di.uevora.pt/tweb/t1/oferta/list");
+        const data = await response.json();
+        
+        console.log("Ofertas recebidas:", data);
+        
+        if (data.status === "ok" && data.oferta_set && data.oferta_set.length > 0) {
+            displayOffers(data.oferta_set, container);
+        } else {
+            container.innerHTML = "<p>Nenhuma oferta disponível hoje.</p>";
+        }
+    } catch (error) {
+        container.innerHTML = "<p>Erro ao carregar ofertas.</p>";
+        console.error("Erro:", error);
+    }
+}
 
-    const container = document.getElementById("listar-ofertas");
-    container.innerHTML = "";
-
-    data.forEach(o => {
-        container.innerHTML += `
-            <div class="oferta-card">
-                <img src="${o.foto}" class="img-oferta">
-                <h3>${o.nome}</h3>
-                <p>${o.descricao}</p>
-                <p><strong>Unidades:</strong> ${o.unidades}</p>
-                <button onclick="reservar(${o.oferta_id})">Reservar</button>
+function displayOffers(offers, container) {
+    let html = "<div class='offers-grid'>";
+    
+    offers.forEach(offer => {
+        html += `
+        <div class="offer-card">
+            <div class="offer-image" style="background-image: url('${offer.foto || 'https://via.placeholder.com/150'}')"></div>
+            <div class="offer-info">
+                <h3>${offer.nome || offer.titulo || 'Sem nome'}</h3>
+                <p><strong>Restaurante ID:</strong> ${offer.restaurante_id}</p>
+                <p><strong>Descrição:</strong> ${offer.descricao || 'Sem descrição'}</p>
+                <p><strong>Unidades disponíveis:</strong> ${offer.unidades}</p>
+                <p><strong>ID Oferta:</strong> ${offer.oferta_id}</p>
+                <button class="reserve-btn" onclick="reserveOffer(${offer.oferta_id})">
+                    Reservar
+                </button>
             </div>
-        `;
+        </div>`;
     });
+    
+    html += "</div>";
+    container.innerHTML = html;
+    container.classList.remove("no-show");
 }

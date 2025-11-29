@@ -60,3 +60,11 @@ h1{
     border: 1px solid #000;
     margin: .5em;
 }
+.offer-image{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}

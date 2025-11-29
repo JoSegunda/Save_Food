@@ -93,3 +93,14 @@ h1{
     font-size: 1em;
     word-wrap: break-word;
 }
+.reserve-btn{
+    width: 100%;
+    padding: .4em;
+    height: 2em;
+    font-size: large;
+    border: 0;
+    margin-top: 1rem;
+    color: #fff;
+    background-color: #4CAF50;
+    border-radius: 8px;
+}

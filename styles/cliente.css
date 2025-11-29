@@ -56,14 +56,15 @@ h1{
 }
 .offer-card{
     display: flex;
+    width: 100%;
     flex-direction: row;
     border: 1px solid #000;
     margin: .5em;
 }
 .offer-image{
     width: 100%;
-    margin: 0;
-    padding: 0;
+    margin-right: 5em;
+    padding: 1rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -71,5 +72,8 @@ h1{
 
 .offer-info{
     text-align: justify;
+    padding: 2em;
+    border-left: 1px solid #000;
+    word-wrap: break-word;
     
 }

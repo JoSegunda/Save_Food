@@ -42,18 +42,7 @@ h1{
     border: 1px solid #000;
     outline: 0;
 }
-#search{
-    padding: 10px;
-    margin: 1rem;
-    width: 30%;
-    border-radius: 12px;
-    border: 0;
-    color: #ffffff;
-    background-color: #4CAF50;
-    font-weight: bold;
-    cursor: pointer;
-    transition: .4s;
-}
+
 
 #search:hover{
     opacity: .9;

@@ -170,11 +170,19 @@ footer{
     }
     #navigation{
         margin: auto;
+        padding: 0;
     }
+    
     nav{
         margin: 0;
     }
     section#offers{
+        width: 100%;
+    }
+    secttion#offers form#ofertas{
+        width: 100%;
+    }
+    section#offers input{
         width: 100%;
     }
 }

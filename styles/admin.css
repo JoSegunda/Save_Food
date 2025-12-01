@@ -60,3 +60,10 @@ Alternar linhas zebra (cinza claro e branco)
 }
 
 /* tables css */
+.admin-section {
+    padding: 20px;
+}
+
+.search-filter {
+    margin: 20px 0;
+}

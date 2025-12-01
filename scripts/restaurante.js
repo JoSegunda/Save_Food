@@ -80,12 +80,12 @@ document.addEventListener("DOMContentLoaded", () => {
   async function loadOffers() {
     offersContainer.innerHTML = "<h1>Suas ofertas ativas</h1> <p>A carregar ....</p>";
 
-    await sleep(3000);
+    await sleep(1000);
     try {
       const resp = await fetch("https://magno.di.uevora.pt/tweb/t1/oferta/list");
       const data = await resp.json();
 
-      console.log("Resposta completa da API:", data);
+      // console.log("Resposta completa da API:", data);
 
       if (!data.oferta_set || !Array.isArray(data.oferta_set) || data.oferta_set.length === 0) {
         offersContainer.innerHTML = "<p>Nenhuma Oferta Encontrada.</p>";
@@ -104,17 +104,19 @@ document.addEventListener("DOMContentLoaded", () => {
       let html = "<h1>Suas ofertas ativas</h1>";
       ofertasDoRestaurante.forEach((oferta) => {
         html += `
-            <div class="oferta-card">
-                    <div class="oferta-card-img" style="background-image: url('${
-                      oferta.foto || "https://via.placeholder.com/150"
-                    }')"></div>
-                    <div class="oferta-card-info">
-                        <h4>${oferta.nome}</h4>
-                        <p><strong>Descrição:</strong> ${oferta.descricao}</p>
-                        <p><strong>Quantidade:</strong> ${oferta.unidades}</p>
-                        <p><strong>ID:</strong> ${oferta.oferta_id}</p>
-                    </div>
-                </div>`;
+            <div class="wrap-oferta-card">
+              <div class="oferta-card">
+                      <div class="oferta-card-img" style="background-image: url('${
+                        oferta.foto || "https://via.placeholder.com/150"
+                      }')"></div>
+                      <div class="oferta-card-info">
+                          <h4>${oferta.nome}</h4>
+                          <p><strong>Descrição:</strong> ${oferta.descricao}</p>
+                          <p><strong>Quantidade:</strong> ${oferta.unidades}</p>
+                          <p><strong>ID:</strong> ${oferta.oferta_id}</p>
+                      </div>
+                  </div>
+              </div>`;
       });
 
       offersContainer.innerHTML = html;

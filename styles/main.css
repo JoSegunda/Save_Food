@@ -167,6 +167,14 @@ footer{
 @media (max-width: 600px) {
     #logo-nav{
         display: none;
-        position: relative;
+    }
+    #navigation{
+        margin: auto;
+    }
+    nav{
+        margin: 0;
+    }
+    section#offers{
+        width: 100%;
     }
 }

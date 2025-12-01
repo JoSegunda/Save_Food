@@ -1,15 +1,16 @@
 section#admin{
     display: flex;
     justify-content: center;
+
 }
 #admin-tools{
+    margin: auto;
     background-color: #F9F9F9;
     margin: 1rem;
     width: 70%;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     
 }
@@ -31,12 +32,6 @@ section#admin{
     cursor: pointer;
     margin-bottom: .5em;
 }
-#show-rest-info,
-#show-client-info,
-#show-offers-info {
-    transition: opacity 0.3s ease, transform 0.3s ease;
-}
-
 .active{
     background-color: #4CAF50;
     transition: all 0.3s ease-in;

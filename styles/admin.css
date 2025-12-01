@@ -67,3 +67,14 @@ Alternar linhas zebra (cinza claro e branco)
 .search-filter {
     margin: 20px 0;
 }
+.search-filter input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.table-container {
+    overflow-x: auto;
+}

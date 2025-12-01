@@ -168,6 +168,20 @@ footer{
     #logo-nav{
         display: none;
     }
+    #logo{
+        margin-top: 10rem;
+        width: 1rem;
+        height: 1rem;
+    }
+    #introduction h1{
+        font-size: 2rem;
+    }
+    #introduction h3{
+        font-size: 1rem;
+    }
+    #navigation > li{
+        font-size: 1rem;
+    }
     #navigation{
         margin: auto;
         padding: 0;
@@ -176,6 +190,7 @@ footer{
     nav{
         margin: 0;
     }
+    /* Restaurant section */
     section#offers{
         width: 100%;
     }
@@ -183,6 +198,9 @@ footer{
         width: 100%;
     }
     section#offers input{
+        width: 100%;
+    }
+    section#offers textarea{
         width: 100%;
     }
 }

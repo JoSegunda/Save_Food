@@ -25,7 +25,7 @@ nav{
     justify-items: baseline;
     align-items: center;
 }
-#logo{
+#logo, #logo-nav{
     background-image: url('../media/logonobg.png');
     background-position: center;
     background-repeat: no-repeat;
@@ -163,4 +163,10 @@ footer{
     justify-content: center;
     align-items: center;
     padding: 18px;
+}
+@media (max-width: 600px) {
+    #logo-nav{
+        display: none;
+        position: relative;
+    }
 }

@@ -10,12 +10,10 @@
     text-align: center;
     padding: 16px;
 }
-.criar-oferta{
+.criar-ofertas{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
 }
 label{
     margin-top: 1rem;
@@ -33,7 +31,7 @@ input, textarea{
     border-radius: 8px;
     color: #000000;
 }
-.wrap-oferta-card{
+#ofertas-disponiveis{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -45,7 +43,7 @@ input, textarea{
     align-items: center;
     border: 1px solid #000000;
     border-radius: 12px;
-    width: 20rem;
+    width: 25rem;
 }
 .oferta-card-img{
     background-position: center;

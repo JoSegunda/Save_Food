@@ -78,7 +78,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // CARREGAR OFERTAS ATIVAS
   async function loadOffers() {
-    offersContainer.innerHTML = "<h1>Suas ofertas ativas</h1> <p>A carregar ....</p>";
+    offersContainer.innerHTML = " <p>A carregar ....</p>";
 
     await sleep(1000);
     try {
@@ -101,22 +101,20 @@ document.addEventListener("DOMContentLoaded", () => {
         }
 
       // Contéudo dentro do card de ofertas
-      let html = "<h1>Suas ofertas ativas</h1>";
+      let html = "";
       ofertasDoRestaurante.forEach((oferta) => {
         html += `
-            <div class="wrap-oferta-card">
-              <div class="oferta-card">
-                      <div class="oferta-card-img" style="background-image: url('${
-                        oferta.foto || "https://via.placeholder.com/150"
-                      }')"></div>
-                      <div class="oferta-card-info">
-                          <h4>${oferta.nome}</h4>
-                          <p><strong>Descrição:</strong> ${oferta.descricao}</p>
-                          <p><strong>Quantidade:</strong> ${oferta.unidades}</p>
-                          <p><strong>ID:</strong> ${oferta.oferta_id}</p>
-                      </div>
-                  </div>
-              </div>`;
+            <div class="oferta-card">
+                    <div class="oferta-card-img" style="background-image: url('${
+                      oferta.foto || "https://via.placeholder.com/150"
+                    }')"></div>
+                    <div class="oferta-card-info">
+                        <h4>${oferta.nome}</h4>
+                        <p><strong>Descrição:</strong> ${oferta.descricao}</p>
+                        <p><strong>Quantidade:</strong> ${oferta.unidades}</p>
+                        <p><strong>ID:</strong> ${oferta.oferta_id}</p>
+                    </div>
+                </div>`;
       });
 
       offersContainer.innerHTML = html;

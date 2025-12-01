@@ -215,5 +215,9 @@ footer{
     section#client-area #show-oferta, #show-rest{
         width: 100%;
     }
+    /* Admin */
+    section#admin #admin-tools{
+        width: 100%;
+    }
 
 }

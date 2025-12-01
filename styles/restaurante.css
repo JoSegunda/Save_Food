@@ -6,16 +6,11 @@
     border-radius: 12px;
     margin: 4rem auto;
 }
-section{
-    display: flex;
-    flex-direction: column;
-}
 #offer-apoio{
     text-align: center;
     padding: 16px;
 }
-#ofertas
-{
+.criar-oferta{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -40,6 +35,7 @@ input, textarea{
 }
 .wrap-oferta-card{
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
 }
 .oferta-card{

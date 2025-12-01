@@ -269,3 +269,7 @@ function filterTable(tableId, searchTerm) {
         rows[i].style.display = shouldShow ? "" : "none";
     }
 }
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}

@@ -31,6 +31,11 @@ section#admin{
     cursor: pointer;
     margin-bottom: .5em;
 }
+#show-rest-info,
+#show-client-info,
+#show-offers-info {
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
 
 .active{
     background-color: #4CAF50;

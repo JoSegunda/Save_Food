@@ -203,4 +203,17 @@ footer{
     section#offers textarea{
         width: 100%;
     }
+    /* Clientes */
+    section#client-area{
+        margin: 0;
+        padding: 0;
+    }
+    section#client-area #show-content{
+        padding: 0;
+        margin: 0;
+    }
+    section#client-area #show-oferta, #show-rest{
+        width: 100%;
+    }
+
 }

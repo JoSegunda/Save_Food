@@ -90,3 +90,10 @@ Alternar linhas zebra (cinza claro e branco)
     padding: 10px 12px;
     border-bottom: 1px solid #eee;
 }
+.admin-table tr:hover {
+    background-color: #f9f9f9;
+}
+
+.admin-table tr:nth-child(even) {
+    background-color: #f8f8f8;
+}

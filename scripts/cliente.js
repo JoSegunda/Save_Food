@@ -35,7 +35,7 @@ async function loadOffers() {
         const response = await fetch("https://magno.di.uevora.pt/tweb/t1/oferta/list");
         const data = await response.json();
         
-        console.log("Ofertas recebidas:", data);
+        // console.log("Ofertas recebidas:", data);
         
         if (data.status === "ok" && data.oferta_set && data.oferta_set.length > 0) {
             displayOffers(data.oferta_set, container);
@@ -74,17 +74,21 @@ function displayOffers(offers, container) {
 }
 
 // RESERVAR OFERTA
+// RESERVAR OFERTA - VERSÃO COM DEBUG
 async function reserveOffer(offerId) {
     if (!confirm("Reservar esta oferta?")) {
         return;
     }
     
     const clienteId = 1; // ID simulado
+    const unidades = prompt("Quantas unidades? ")
     
     try {
         const data = new URLSearchParams();
         data.append("oferta_id", offerId);
         data.append("cliente_id", clienteId);
+        data.append("unidades", unidades);
+        
         
         const response = await fetch("https://magno.di.uevora.pt/tweb/t1/oferta/reserve", {
             method: "POST",
@@ -94,16 +98,35 @@ async function reserveOffer(offerId) {
             body: data.toString()
         });
         
-        const result = await response.json();
+        const responseText = await response.text();
         
-        if (result.status === "ok") {
+        let result;
+        try {
+            result = JSON.parse(responseText);
+        } catch (error) {
+            console.error("Erro ao parsear JSON:", error);
+            alert("❌ Erro: Resposta inválida do servidor");
+            return;
+        }
+        
+        // Verificar diferentes formatos de resposta
+        if (result.status === "ok" || result.sucesso === true) {
             alert("✅ Reserva efetuada com sucesso!");
+            if (result.reserva_id) {
+                console.log("ID da reserva:", result.reserva_id);
+            }
             loadOffers(); // Atualiza a lista
+        } else if (result.erro) {
+            alert("❌ Erro: " + result.erro);
+        } else if (result.message) {
+            alert("❌ Erro: " + result.message);
         } else {
-            alert("❌ Erro: " + (result.erro || "Erro desconhecido"));
+            console.error("Formato de resposta desconhecido:", result);
+            alert("❌ Erro desconhecido do servidor");
         }
     } catch (error) {
-        alert("❌ Erro de ligação ao servidor");
+        console.error("Erro completo:", error);
+        alert("❌ Erro de ligação ao servidor: " + error.message);
     }
 }
 
@@ -118,7 +141,7 @@ async function loadRestaurants() {
         const response = await fetch("https://magno.di.uevora.pt/tweb/t1/restaurante/list");
         const data = await response.json();
         
-        console.log("Restaurantes recebidos:", data);
+        // console.log("Restaurantes recebidos:", data);
         
         if (data.status === "ok" && data.restaurante_set && data.restaurante_set.length > 0) {
             displayRestaurants(data.restaurante_set, container);

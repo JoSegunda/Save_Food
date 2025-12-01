@@ -223,7 +223,7 @@ footer{
         width: 100%;
     }
     section#admin #admin-tools{
-        width: 100%;
+        width: fit-content;
     }
     section#admin #admin-nav{
         font-size: 1rem;
@@ -232,6 +232,20 @@ footer{
     }
     section#admin #admin-info {
         text-align: center;
+    }section#admin #admin-info p,h1{
+        word-wrap: break-word;
     }
     
+}
+
+@media (max-width: 950px){
+    section#admin .admin-section{
+        width: 100%;
+    }
+    section#admin .table-container{
+        width: 100%;
+        max-height: 50rem;
+        max-width: 30rem;
+        overflow-x: scroll;
+    }
 }

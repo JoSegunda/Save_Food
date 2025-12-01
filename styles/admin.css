@@ -7,7 +7,7 @@ section#admin{
     margin: auto;
     background-color: #F9F9F9;
     margin: 1rem;
-    width: 70%;
+
     border-radius: 12px;
     display: flex;
     flex-direction: column;
@@ -45,23 +45,16 @@ section#admin{
     background-color: #4CAF50;
 }
 
-/* Style do show rest info
-
-Tabela responsiva
-
-Alternar linhas zebra (cinza claro e branco)
-
-Ícone 🏪 no título
-
-
-*/
 .hide-info{
     display: None;
 }
 
 /* tables css */
 .admin-section {
-    padding: 20px;
+    margin: 5rem;
+    overflow-wrap: break-word;
+    overflow-y: auto; /* Scroll apenas vertical, melhor UX */
+    overflow-x: hidden;
 }
 
 .search-filter {
@@ -76,7 +69,7 @@ Alternar linhas zebra (cinza claro e branco)
 }
 
 .table-container {
-    overflow-x: auto;
+    overflow-x: scroll;
 }
 .admin-table th {
     background-color: #f5f5f5;

@@ -1,17 +1,18 @@
+
 section#admin{
     display: flex;
     justify-content: center;
 
 }
 #admin-tools{
-    margin: auto;
+    width: 100%;
     background-color: #F9F9F9;
-    margin: 1rem;
-
+    margin-top: 1rem;
     border-radius: 12px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     
 }
 #admin-nav{
@@ -22,7 +23,6 @@ section#admin{
     border-bottom: 2px solid #4CAF50;
     gap: 1rem;
     gap: 18px;
-    width: 50%;
 }
 #rest-info,
 #client-info,
@@ -48,20 +48,17 @@ section#admin{
 .hide-info{
     display: None;
 }
-
 /* tables css */
 .admin-section {
     margin: 5rem;
-    overflow-wrap: break-word;
-    overflow-y: auto; /* Scroll apenas vertical, melhor UX */
-    overflow-x: hidden;
 }
 
 .search-filter {
-    margin: 20px 0;
+    margin: 20px 1rem;
+    width: 100%;
 }
 .search-filter input {
-    width: 100%;
+    width: 50%;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 4px;

@@ -209,13 +209,13 @@ async function loadAdminOffers() {
 function displayAdminOffers(offers, container) {
     sleep(2000)
     let html = `
-        <div class="admin-section">
-            <h2>Ofertas (${offers.length})</h2>
-            
-            <div class="search-filter">
+    
+    <div class="search-filter">
+    <h2>Ofertas (${offers.length})</h2>
                 <input type="text" id="filter-offers" placeholder="Filtrar por nome ou restaurante..." 
                        onkeyup="filterTable('offers-table', this.value)">
             </div>
+        <div class="admin-section">
             
             <div class="table-container">
                 <table id="offers-table" class="admin-table">

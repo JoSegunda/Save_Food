@@ -222,9 +222,6 @@ footer{
         align-items: center;
         width: 100%;
     }
-    section#admin #admin-tools{
-        width: fit-content;
-    }
     section#admin #admin-nav{
         font-size: 1rem;
         display: flex;
@@ -235,17 +232,42 @@ footer{
     }section#admin #admin-info p,h1{
         word-wrap: break-word;
     }
+    section#admin .table-container{
+        width: 100%;
+        max-height: 50rem;
+        max-width: 20rem;
+        overflow-x: scroll;
+    }
     
 }
 
-@media (max-width: 950px){
-    section#admin .admin-section{
+@media (max-width: 1000px){
+     
+    section#admin .table-container{
         width: 100%;
+        max-height: 50rem;
+        max-width: 40rem;
+        overflow-x: scroll;
     }
+}
+@media (max-width: 800px){
+     
     section#admin .table-container{
         width: 100%;
         max-height: 50rem;
         max-width: 30rem;
+        overflow-x: scroll;
+    }
+    section#admin .search-filter{
+        margin-left: 5rem;
+    }
+}
+@media (max-width: 650px){
+     
+    section#admin .table-container{
+        width: 100%;
+        max-height: 50rem;
+        max-width: 20rem;
         overflow-x: scroll;
     }
 }

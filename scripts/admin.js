@@ -42,11 +42,10 @@ async function loadRestaurants() {
     container.innerHTML = "<p>A carregar restaurantes...</p>";
     
     try {
-        // API específica do admin para restaurantes
         const response = await fetch("https://magno.di.uevora.pt/tweb/t1/admin/restaurante/list");
         const data = await response.json();
         
-        console.log("Restaurantes (admin):", data);
+        // console.log("Restaurantes (admin):", data);
         
         if (data.status === "ok" && data.restaurante_set && data.restaurante_set.length > 0) {
             displayAdminRestaurants(data.restaurante_set, container);
@@ -104,7 +103,7 @@ function displayAdminRestaurants(restaurants, container) {
     container.innerHTML = html;
 }
 
-// ================= CLIENTES =================
+// CLIENTES
 async function loadClients() {
     const container = document.querySelector("#show-client-info");
     if (!container) return;
@@ -116,7 +115,7 @@ async function loadClients() {
         const response = await fetch("https://magno.di.uevora.pt/tweb/t1/admin/cliente/list");
         const data = await response.json();
         
-        console.log("Clientes (admin):", data);
+        // console.log("Clientes (admin):", data);
         
         if (data.status === "ok" && data.cliente_set && data.cliente_set.length > 0) {
             displayAdminClients(data.cliente_set, container);
@@ -174,7 +173,7 @@ function displayAdminClients(clients, container) {
     container.innerHTML = html;
 }
 
-// ================= OFERTAS =================
+// OFERTAS
 async function loadAdminOffers() {
     const container = document.querySelector("#show-offers-info");
     if (!container) return;
@@ -182,11 +181,10 @@ async function loadAdminOffers() {
     container.innerHTML = "<p>A carregar ofertas...</p>";
     
     try {
-        // API específica do admin para ofertas
         const response = await fetch("https://magno.di.uevora.pt/tweb/t1/admin/oferta/list");
         const data = await response.json();
         
-        console.log("Ofertas (admin):", data);
+        // console.log("Ofertas (admin):", data);
         
         if (data.status === "ok" && data.oferta_set && data.oferta_set.length > 0) {
             displayAdminOffers(data.oferta_set, container);
@@ -248,7 +246,7 @@ function displayAdminOffers(offers, container) {
     container.innerHTML = html;
 }
 
-// ================= FUNÇÃO DE FILTRAGEM =================
+// FILTRAR DADOS 
 function filterTable(tableId, searchTerm) {
     const table = document.getElementById(tableId);
     if (!table) return;

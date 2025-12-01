@@ -21,6 +21,7 @@ function SetActive(element){
     
     // Carregar dados quando muda de tab
     if (element === "rest-info") {
+        
         loadRestaurants();
     } else if (element === "client-info") {
         loadClients();
@@ -34,7 +35,7 @@ document.addEventListener("DOMContentLoaded", () => {
     loadRestaurants();
 });
 
-// ================= RESTAURANTES =================
+// RESTAURANTES 
 async function loadRestaurants() {
     const container = document.querySelector("#show-rest-info");
     if (!container) return;
@@ -46,6 +47,8 @@ async function loadRestaurants() {
         const data = await response.json();
         
         // console.log("Restaurantes (admin):", data);
+        await sleep(1000)
+        container.innerHTML = "<p>A procurar Restaurantes</p>"
         
         if (data.status === "ok" && data.restaurante_set && data.restaurante_set.length > 0) {
             displayAdminRestaurants(data.restaurante_set, container);
@@ -59,6 +62,7 @@ async function loadRestaurants() {
 }
 
 function displayAdminRestaurants(restaurants, container) {
+    
     let html = `
         <div class="admin-section">
             <h2>Restaurantes (${restaurants.length})</h2>
@@ -116,6 +120,8 @@ async function loadClients() {
         const data = await response.json();
         
         // console.log("Clientes (admin):", data);
+        await sleep(1000)
+        container.innerHTML = "<p>A procurar Clientes</p>"
         
         if (data.status === "ok" && data.cliente_set && data.cliente_set.length > 0) {
             displayAdminClients(data.cliente_set, container);
@@ -129,6 +135,7 @@ async function loadClients() {
 }
 
 function displayAdminClients(clients, container) {
+    sleep(2000)
     let html = `
         <div class="admin-section">
             <h2>Clientes (${clients.length})</h2>
@@ -185,6 +192,8 @@ async function loadAdminOffers() {
         const data = await response.json();
         
         // console.log("Ofertas (admin):", data);
+        await sleep(1000)
+        container.innerHTML = "<p>A procurar Ofertas</p>"
         
         if (data.status === "ok" && data.oferta_set && data.oferta_set.length > 0) {
             displayAdminOffers(data.oferta_set, container);
@@ -198,6 +207,7 @@ async function loadAdminOffers() {
 }
 
 function displayAdminOffers(offers, container) {
+    sleep(2000)
     let html = `
         <div class="admin-section">
             <h2>Ofertas (${offers.length})</h2>
